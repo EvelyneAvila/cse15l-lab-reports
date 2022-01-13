@@ -15,6 +15,9 @@
 
 1. item one
 2. item two
+3. item three change in VSCode
+4. This is to show edits in Github Desktop
+5. don't forget to commit and push!
 
 rule:
 
@@ -23,7 +26,7 @@ rule:
 `java code` hello
 
 ```
-#this is code for lab week 2
+#this is code for week 2
 an example
 ```
 
