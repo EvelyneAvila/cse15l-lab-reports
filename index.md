@@ -1,2 +1,32 @@
+**This will be for Lab Reports**
+# Lab Week 2
+## Github
+
 *Hello* to myself from the future
+
+[Link](https://ucsd-cse15l-w22.github.io/)
+
+![Image](https://cdn.idntimes.com/content-images/duniaku/post/20210226/8-0930d22cd3c6be8b3a469ef8d2c5ef59-1a632f682515312b134ca1fb0f3f52f9.jpg)
+
+> This is blockquote
+
+* item 1
+* item 2
+
+1. item one
+2. item two
+
+rule:
+
+***
+
+`java code` hello
+
+```
+#this is code for lab week 2
+an example
+```
+
+
+
 
