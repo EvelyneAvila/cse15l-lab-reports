@@ -17,7 +17,7 @@ We will now continue to use VScode to connect to a remote computer over the Inte
 __*First steps for Windows only*__ 
 
 You will need to install and configure the program *OpenSSH* to connect your computer to another computer. 
-- Open settings, select Apps > Apps & Features, then click on Optional Features. Look to see if OpenSSH Client and OpenSSH Server are installed. If not click install.
+- Open settings, select Apps > Apps & Features, then click on Optional Features. Look to see if OpenSSH Client and OpenSSH Server are installed. If not, click install.
 - Now, open PowerShell as an administrator, and run the following commands in order:
 
 ```
@@ -95,7 +95,7 @@ class WhereAmI {
 - Now, log into ieng6 using ssh command. Once logged in, use `ls` and should see something like this:
 
     ![Image](whereFile.PNG)
-- Now, run both `javac` and `java` on the ieng6 computer
+- Now, compile and run the file using both `javac` and `java` on the ieng6 computer
 
 ## Setting an SSH Key
 When wanting to use `scp`, it's going to ask us for the password everytime, and that can be a tiring repetitive task! Our solution to this problem will be `ssh` keys, using the program `ssh-keygen`. 
