@@ -68,7 +68,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 *Note: To log out of the remote server in the terminal you can use Ctrl-D or run the command `exit`*
 
-//needs pic. do it after
+- It should look something like:
+    ![Image](commands.PNG)
 
 ## Moving Files with `scp`
 We will now see a key step in working remotely - copying files between computers
@@ -90,7 +91,7 @@ class WhereAmI {
 
     ![Image](sshcopy.PNG)
 
-    *Note: We will always run the `scp` command from the client, which if your computer not logged into `ieng6`*
+    *Note: We will always run the `scp` command from the client, which is your computer not logged into `ieng6`*
 - Now, log into ieng6 using ssh command. Once logged in, use `ls` and should see something like this:
 
     ![Image](whereFile.PNG)
@@ -133,7 +134,6 @@ ssh-add ~\.ssh\id_ed25519
 
 ## Optimizing Remote Running
 When locally editing a file, such as WhereAmI.java, it would be useful to learn a nice way to copy the edits into the remote server and run it
-- run the command `ssh cs15lwi22abc@ieng6.ucsd.edu "ls"` where abc is specific to your account. This will run the command directly on the server and then exit
-- Another way is using semicolons to run multiple commands on the same line. To make sure it runs in the server we use "" as well. Run the command `cp "WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI"`
-
-//need picture do after
+- run the command `ssh cs15lwi22abc@ieng6.ucsd.edu "ls"` where abc is specific to your account. This will run the command directly on the server and then exit. I would something like this:
+    ![Image](last.PNG)
+- Another way is using semicolons to run multiple commands on the same line. Run the command `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
