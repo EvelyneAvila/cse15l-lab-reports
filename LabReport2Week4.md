@@ -10,7 +10,7 @@
 The symptom of the *failure-inducing input* is shown below:
 ![Image](output1.PNG)
 
-In out failure-inducing input file we wanted to test whether the program would correctly work if it did not have the first open braket. The code that we had at first produced the symptom shown in the image above where it crashed by not having the open braket. The bug was that if it did not had any of the necesary "[]()" characters because it would crash the program by calling markdown.indexOf looking for a character starting from index -1, which is not possible.
+In our failure-inducing input file we wanted to test whether the program would correctly work if it did not have the first open braket. The code that we had at first produced the symptom shown in the image above where it crashed by not having the open braket. The bug was that if it did not had any of the necesary "[]()" characters because it would crash the program by calling markdown.indexOf looking for a character starting from index -1, which is not possible.
 
 
 ## Code change two in `MarkdownParseTest.java`
@@ -32,3 +32,5 @@ When looking at the code we had, we want to introduce failure inducing input to 
 
 The symptom of the *failure-inducing input* is shown below:
 ![Image](output3.PNG)
+
+When running the failure-induced input file, we saw the bug that if there was multiple links and any of them was missing any of the necessary characters (i.e. "[]()") that it would take up to the next line until finding the missing character. This was shown in the symptom in our program output where the first link did not had ")" which led for the program into looking into the second line until finding ")" which then included everything in between. 
