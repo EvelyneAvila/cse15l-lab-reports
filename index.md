@@ -8,6 +8,8 @@
 
 [Link Lab Report 1 Week 2](https://EvelyneAvila.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
+[Link to Lab Report 3 Week 6](https://evelyneavila.github.io/cse15l-lab-reports/lab-report-3-week-6)
+
 ![Image](https://cdn.idntimes.com/content-images/duniaku/post/20210226/8-0930d22cd3c6be8b3a469ef8d2c5ef59-1a632f682515312b134ca1fb0f3f52f9.jpg)
 
 > This is blockquote
