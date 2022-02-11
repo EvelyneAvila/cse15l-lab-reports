@@ -1,13 +1,5 @@
 # Lab Report 3 Week 6
 
-When we connect our *own* laptop to the server `ieng6`, we have to type (or use up and down arrows):
-
-`$ ssh cs15lwi22abc@ieng6.ucsd.edu` 
-
-where `abc` is specific to your course-specific account.
-
-This can be bery tiring! So we will learn a way to make it much easier and cooler!
-
 ## Streamlining ssh Configuration
 
 **Step 1:** In our *own* computer we will type this command `~/.ssh/config` into our terminal, which tells SSH the username to use when loggin in into this server.
@@ -31,13 +23,16 @@ Now that we have our `~/.ssh/config` file, we can now edit this file. We can cha
 **Step 2:** Let's now try the command `ssh nickname` in our terminal, where `nickname` is the nickname you chose.
 
 If this works, then it means things are set up correctly and you successfully looged in into your ieng6 account. 
-However, if there was an error message, don't worry we will do the following: 
+However, if there was an error message we will do the following: 
 * We will add a specific line to our `~/.ssh/config` file to explicitily refer to your `id_rsa` file which contains the private key for SSH
     * IdentityFile ~/.ssh/id_rsa_ucsd
+
     *Note : On Windows, instead of `/` we use `\`
 * Save and try the command `ssh nickname` once again. If it fails, it means the path of the file is incorrect
     * For this, look for your `id_rsa` file mannually
-        *Go into your C:\Users\[your computer username]\.ssh
+
+        *Go into your C:\ Users\ [your computer username] \ .ssh
+
         * Here you will see how the file of your private key is called, and where it might be located. An example of this is:
         ![Image](idPic.PNG)
 * Once again, save `~/.ssh/config` file and try the `ssh nickname` in your terminal. You should now see something like this being your new faster login:
