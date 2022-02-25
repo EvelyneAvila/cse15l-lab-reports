@@ -16,7 +16,7 @@ When creating and implementing tests, we want to have a definition for what succ
 
 Since we have the same goal and definition of what success is in this program we added [the same] 3 test methods to each implementation (6 total test methods) in `MarkdownParseTest.java`.
 
-![Image](tests.PNG)
+![Image](tests1.PNG)
 
 
 ## My Implementation
@@ -24,7 +24,7 @@ Since we have the same goal and definition of what success is in this program we
 
 **Results for running JUnit tests**
 ![Image](test-own.PNG)
-![Image](test-own1.PNG) //DO THIS FOR 3RD TEST
+
 
 **Questions**
 * I do think there is a small change in the code that can make the code work for snippet 1 and similar cases. It can be done through an if statement in our program (inside the while loop), that checks for *standard* or *definitive* characters in markdown *before* the open bracket, so we know if it might indicate it is something other than a link. For example, the if statement could check for backtilts "`" indicating its a quote or a codeblock, or a "!" indicating it might be an image, etc. 
@@ -36,4 +36,4 @@ Since we have the same goal and definition of what success is in this program we
 
 **Results for running JUnit tests**
 
-![Image](test-r.PNG)
+![Image](testSnippets.PNG)
