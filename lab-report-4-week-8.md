@@ -23,7 +23,7 @@ Since we have the same goal and definition of what success is in this program we
 [Repository](https://github.com/EvelyneAvila/markdown-parse) for my implementation
 
 **Results for running JUnit tests**
-![Image](test-own.PNG)
+![Image](test12.PNG)
 
 
 **Questions**
