@@ -19,7 +19,17 @@ Since we have the same goal and definition of what success is in this program we
 ## My Implementation
 [Repository](https://github.com/EvelyneAvila/markdown-parse) for my implementation
 
+**Results for running tests**
+![Image](test-own.PNG)
+![Image](test-own1.PNG) //DO THIS FOR 3RD TEST
 
+**Questions**
+* I do think there is a small change in the code that can make the code work for snippet 1 and similar cases. It can be done through an if statement in our program (inside the while loop), that checks for *standard* or *definitive* characters in markdown *before* the open bracket, so we know if it might indicate it is something other than a link. For example, the if statement could check for backtilts "`" indicating its a quote or a codeblock, or a "!" indicating it might be an image, etc. 
+* I do think there might be a small code change that can make the program work. For the snippet 2 cases and similar ones, we want to make the code check for the *first open parenthesis*  and the *last close parenthesis*, so if there is multiple parenthesis where the link is supposed to be, it takes it into account, and not just cut of at the first index it finds the character (where this is what happened in this program with the close parenthesis).
+* QUESTION 3 EDIT
 
 ## Reviewed Implementation
 [Repository](https://github.com/iireneliao/markdown-parse) for the implementation reviewed
+
+**Results for running tests**
+![Image](test-re.PNG)
