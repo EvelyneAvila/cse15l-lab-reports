@@ -34,7 +34,7 @@ This implementation corresponds to file `41.md`, where the CS Lab 9 implementati
 
 **Expected Output (according to [CommonMark demo site](https://spec.commonmark.org/dingus/))**
 
-![Image](result21.PNG)
+![Image](41.PNG)
 
 
 In my own implementation, the bug that is presented in this test case is that we do not check for characters that are *definitive* when writing in .md files. This is because  `&quot;`  is read as `"`, and because of this special "command" then it's not a link. 
