@@ -17,8 +17,6 @@ This tests corresponds to file `22.md` where *neither* implementation is correct
 
 ![Image](result1.PNG)
 
-spaces
-
 In my own implementation of `markdown-parse`, while I check for a *new line* in between parenthesis, it fails to check for spaces within the parenthesis if they are in the same line (such as [x](a bc)), and take the last "word" between the parenthesis(i.e. "bc"). So we can correct this part of the program by fixing the code shown below in order for this test and similar cases to pass.
 
 ![Image](code-for-test1.PNG)
@@ -38,4 +36,7 @@ This implementation corresponds to file `41.md`, where the CS Lab 9 implementati
 
 ![Image](result21.PNG)
 
-speciL CHARACTER
+
+In my own implementation, the bug that is presented in this test case is that we do not check for characters that are *definitive* when writing in .md files. This is because  `&quot;`  is read as `"`, and because of this special "command" then it's not a link. 
+
+We can fix the bug by checking for this string in the file and if it contains this then we know it's not a link. We would need to do this for every "characteristic command" there is for .md files
