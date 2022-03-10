@@ -42,6 +42,6 @@ This implementation corresponds to file `41.md`, where the CS Lab 9 implementati
 
 In my own implementation, the bug that is presented in this test case is that we do not check for characters that are *definitive* when writing in .md files. This is because  `&quot;`  is read as `"`, and because of this special "command" then it's not a link. 
 
-We can fix the bug by checking for this string in the file through an if statement and if it contains a "characteristic command" then we know it's not a link. We would need to do this for every "characteristic command" there is for .md files, and we can do so after the last if statement (shown below) that's inside the while loop in the getLinks` method.
+We can fix the bug by checking for this string in the file through an if statement and if it contains a "characteristic command" then we know it's not a link. We would need to do this for every "characteristic command" there is for .md files, and we can do so after the last if statement (shown below) that's inside the while loop in the `getLinks` method.
 
 ![Image](code-for-test1.PNG)
