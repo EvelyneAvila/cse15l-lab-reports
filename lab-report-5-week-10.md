@@ -4,7 +4,7 @@ In order to see the tests that were returning different outputs between the two 
 
 ![Image](diff.PNG)
 
-* Note: In the result for `diff`, `<` is the CS Lab 9 implementation, and `>` is my own implementation 
+* Note: In the results for `diff`, `<` is the CS Lab 9 implementation, and `>` is my own implementation 
 
 ## Test 1
 This tests corresponds to file `22.md` where *neither* implementation is correct, as seen below:
@@ -16,6 +16,9 @@ This tests corresponds to file `22.md` where *neither* implementation is correct
 **Expected Output (according to [CommonMark demo site](https://spec.commonmark.org/dingus/))**
 
 ![Image](result1.PNG)
+
+(where the expected outcome is `[ti\*tle]`)
+
 
 In my own implementation of `markdown-parse`, while I check for a *new line* in between parenthesis, it fails to check for spaces within the parenthesis if they are in the same line (such as [x](a bc)), and take the last "word" between the parenthesis(i.e. "bc"). So we can correct this part of the program by fixing the code shown below in order for this test and similar cases to pass.
 
